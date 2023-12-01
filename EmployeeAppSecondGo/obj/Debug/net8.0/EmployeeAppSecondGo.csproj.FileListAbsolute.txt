@@ -1,0 +1,14 @@
+C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\obj\Debug\net8.0\EmployeeAppSecondGo.GeneratedMSBuildEditorConfig.editorconfig
+C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\obj\Debug\net8.0\EmployeeAppSecondGo.AssemblyInfoInputs.cache
+C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\obj\Debug\net8.0\EmployeeAppSecondGo.AssemblyInfo.cs
+C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\obj\Debug\net8.0\EmployeeAppSecondGo.csproj.CoreCompileInputs.cache
+C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\bin\Debug\net8.0\EmployeeAppSecondGo.exe
+C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\bin\Debug\net8.0\EmployeeAppSecondGo.deps.json
+C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\bin\Debug\net8.0\EmployeeAppSecondGo.runtimeconfig.json
+C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\bin\Debug\net8.0\EmployeeAppSecondGo.dll
+C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\bin\Debug\net8.0\EmployeeAppSecondGo.pdb
+C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\obj\Debug\net8.0\EmployeeAppSecondGo.dll
+C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\obj\Debug\net8.0\refint\EmployeeAppSecondGo.dll
+C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\obj\Debug\net8.0\EmployeeAppSecondGo.pdb
+C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\obj\Debug\net8.0\EmployeeAppSecondGo.genruntimeconfig.cache
+C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\obj\Debug\net8.0\ref\EmployeeAppSecondGo.dll
