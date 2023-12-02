@@ -1,13 +1,21 @@
 ﻿using EmployeeAppSecondGo.Interfaces;
 using EmployeeAppSecondGo.ServicesM;
+using System.Runtime.CompilerServices;
 
 namespace EmployeeAppSecondGo.Services;
 
 public class Menu
 {
+    private readonly Read myReader;
+    private readonly IEmployeeService employeeService;
+
+    public Menu(IEmployeeService employeeService,Read myReader)
+    {
+        this.myReader = myReader;
+        this.employeeService = employeeService;
+    }
     public void MenuOptions()
     {
-        IEmployeeService employeeService = new EmployeeService();
 
         while (true)
         {
@@ -51,18 +59,15 @@ public class Menu
                     employeeService.DeleteEmployee();
                     break;
                 case "6":
-                    Read myWriter = new Read();
                     Console.WriteLine("Enter file name: ");
                     string fileName = Console.ReadLine()?.Trim()!;
-                    myWriter.ToFile(fileName, employeeService.EmployeeList);
+                    myReader.ToFile(fileName, employeeService.EmployeeList);
                     break;
                 case "7":
-                    Read myReader = new Read();
                     myReader.FromFile(employeeService.EmployeeList);
                     break;
                 case "8":
-                    Read delete = new Read();
-                    delete.DeleteFile();
+                    myReader.DeleteFile();
                     break;
                 case "9":
                     ExitApplication.Exit();

@@ -134,16 +134,16 @@ public class Read
         Console.WriteLine("*******************************");
 
         Console.Write("Enter the name of the file you want to delete: ");
-        string fileNameToDelete = Console.ReadLine()!;
+        string nameOfFileToDelete = Console.ReadLine()!;
 
-        string fileToDelete = Path.Combine(folderPath, @"C:\EC\csharp\EmployeeAppSecondGo\ListFile", fileNameToDelete);
+        string fileToDelete = Path.Combine(folderPath, nameOfFileToDelete);
 
         try
         {
             if (File.Exists(fileToDelete))
             {
                 File.Delete(fileToDelete);
-                Console.WriteLine($"File '{fileToDelete}' was successfully deleted.");
+                DisplayMessage.Message($"File '{fileToDelete}' was successfully deleted.");
             }
             else
             {

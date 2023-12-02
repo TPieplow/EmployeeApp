@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmployeeAppSecondGo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c86d2be8faf87f8dd5330e069828d9a581b9244d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cefee8226b4dc386f895bcab4f7be92280613592")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmployeeAppSecondGo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmployeeAppSecondGo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
