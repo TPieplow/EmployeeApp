@@ -28,6 +28,7 @@ public class Read
                             Console.WriteLine(employeeInfo);
                             writer.WriteLine(employeeInfo);
                         }
+                        Console.WriteLine($"File {fileName}.txt created successfully.");
                         Console.WriteLine("Press any key to continue...");
                         Console.ReadKey();
                     }
@@ -100,6 +101,7 @@ public class Read
                             else
                             {
                                 Console.WriteLine($"Invalid data format in the file.");
+                                Console.ReadKey();
                             }
                         }
                     }
@@ -113,6 +115,42 @@ public class Read
         }
         catch (Exception ex)
         {
+            Console.WriteLine($"An error occured: {ex.Message}");
+        }
+    }
+
+    internal void DeleteFile()
+    {
+        string folderPath = Path.Combine(@"C:\EC\csharp\EmployeeAppSecondGo\ListFile");
+        string[] files = Directory.GetFiles(folderPath);
+
+        Console.Clear();
+        Console.WriteLine("Available files in the folder: ");
+        Console.WriteLine("*******************************");
+        foreach (string file in files)
+        {
+            Console.WriteLine(Path.GetFileName(file));
+        }
+        Console.WriteLine("*******************************");
+
+        Console.Write("Enter the name of the file you want to delete: ");
+        string fileNameToDelete = Console.ReadLine()!;
+
+        string fileToDelete = Path.Combine(folderPath, @"C:\EC\csharp\EmployeeAppSecondGo\ListFile", fileNameToDelete);
+
+        try
+        {
+            if (File.Exists(fileToDelete))
+            {
+                File.Delete(fileToDelete);
+                Console.WriteLine($"File '{fileToDelete}' was successfully deleted.");
+            }
+            else
+            {
+                Console.WriteLine($"File {fileToDelete} not found.");
+            }
+        }catch (Exception ex) 
+        { 
             Console.WriteLine($"An error occured: {ex.Message}");
         }
     }

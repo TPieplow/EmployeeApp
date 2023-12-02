@@ -22,6 +22,7 @@ public class Menu
                 "5. Delete Employee",
                 "6. Create New File",
                 "7. Load File",
+                "8. Delete File",
                 "9. Exit"
             };
 
@@ -58,6 +59,10 @@ public class Menu
                 case "7":
                     Read myReader = new Read();
                     myReader.FromFile(employeeService.EmployeeList);
+                    break;
+                case "8":
+                    Read delete = new Read();
+                    delete.DeleteFile();
                     break;
                 case "9":
                     ExitApplication.Exit();

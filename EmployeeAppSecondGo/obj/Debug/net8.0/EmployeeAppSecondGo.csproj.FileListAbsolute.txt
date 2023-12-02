@@ -12,3 +12,4 @@ C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\obj\Debug\net8.0\refint\Emp
 C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\obj\Debug\net8.0\EmployeeAppSecondGo.pdb
 C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\obj\Debug\net8.0\EmployeeAppSecondGo.genruntimeconfig.cache
 C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\obj\Debug\net8.0\ref\EmployeeAppSecondGo.dll
+C:\EC\csharp\EmployeeAppSecondGo\EmployeeAppSecondGo\obj\Debug\net8.0\EmployeeAppSecondGo.sourcelink.json

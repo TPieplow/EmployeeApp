@@ -26,7 +26,7 @@ namespace EmployeeAppSecondGo.ServicesM
 
             Guid id = Guid.NewGuid();
 
-            IEmployee employee= new Employee(id, name, position);
+            IEmployee employee = new Employee(id, name, position);
             employeeList.Add(employee);
 
             DisplayMessage.Message("Employee successfully added");
@@ -62,7 +62,8 @@ namespace EmployeeAppSecondGo.ServicesM
                         DisplayMessage.Message("An error occured while updating employee.");
                     }
                 }
-            } catch (Exception ex) 
+            }
+            catch (Exception ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
             }
@@ -90,10 +91,17 @@ namespace EmployeeAppSecondGo.ServicesM
         public void GetEmployees()
         {
             Console.Clear();
-            foreach (IEmployee employee in employeeList)
+            if (employeeList.Count == 0)
             {
-                Console.WriteLine("-------------------------------------------------------------");
-                Console.WriteLine($"Name: {employee.Name} \nPosition: {employee.Position} \nID: {employee.Id}");
+                DisplayMessage.Message("List is empty");
+            }
+            else
+            {
+                foreach (IEmployee employee in employeeList)
+                {
+                    Console.WriteLine("-------------------------------------------------------------");
+                    Console.WriteLine($"Name: {employee.Name} \nPosition: {employee.Position} \nID: {employee.Id}");
+                }
             }
             Console.ReadKey();
         }
